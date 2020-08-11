@@ -1,0 +1,277 @@
+<div id="user_info" class="m-portlet" hidden>
+	<div class="m-portlet__head">
+		<div class="m-portlet__head-caption">
+			<div class="m-portlet__head-title">
+				<span class="m-portlet__head-icon m--hide">
+					<i class="la la-gear"></i>
+				</span>
+				<h3 class="m-portlet__head-text">
+					Profile
+				</h3>
+			</div>
+		</div>
+	</div>
+
+	<!--begin::Form-->
+	<form id="update_user_form" class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed">
+		<div class="m-portlet__body">
+			<div class="form-group m-form__group row">
+				<div class="col-lg-6">
+					<label>Full Name:</label>
+					<div class="m-input-icon m-input-icon--right">
+						<input type="text" name="name" class="form-control m-input" placeholder="Enter full name" />
+						<span class="m-input-icon__icon m-input-icon__icon--right"
+							><span><i class="la la-user"></i></span
+						></span>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<label class="">Email:</label>
+					<div class="m-input-icon m-input-icon--right">
+						<input type="text" name="email" class="form-control m-input" placeholder="Enter email" />
+						<span class="m-input-icon__icon m-input-icon__icon--right"
+							><span><i class="la la-mail"></i></span
+						></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
+			<div class="m-form__actions m-form__actions--solid">
+				<div class="row">
+					<div class="col-sm">
+						<button
+							type="button"
+							class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air"
+							data-toggle="modal"
+							data-remote="remote_modals/change_password_modal.html"
+							data-target="#edit_small_modal"
+						>
+							Change password
+						</button>
+					</div>
+					<div class="col-sm m--align-right">
+						<button
+							type="submit"
+							class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air"
+							onclick="EditProfile.update_user()"
+						>
+							Update
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<div id="company_info" class="m-portlet" hidden>
+	<div class="m-portlet__head">
+		<div class="m-portlet__head-caption">
+			<div class="m-portlet__head-title">
+				<span class="m-portlet__head-icon m--hide">
+					<i class="la la-gear"></i>
+				</span>
+				<h3 class="m-portlet__head-text">
+					Company
+				</h3>
+			</div>
+		</div>
+	</div>
+
+	<!--begin::Form-->
+	<form id="update_company_form" class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed">
+		<div class="m-portlet__body">
+			<div class="form-group m-form__group row">
+				<div class="col-lg-6">
+					<label>Name:</label>
+					<div class="m-input-icon m-input-icon--right">
+						<input type="text" name="name" class="form-control m-input" placeholder="Enter full name" />
+						<span class="m-input-icon__icon m-input-icon__icon--right"
+							><span><i class="la la-user"></i></span
+						></span>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<label class="">Address:</label>
+					<div class="m-input-icon m-input-icon--right">
+						<input type="text" name="address" class="form-control m-input" placeholder="Enter email" />
+						<span class="m-input-icon__icon m-input-icon__icon--right"
+							><span><i class="la la-mail"></i></span
+						></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="m-portlet__body">
+			<div class="form-group m-form__group row">
+				<div class="col-lg-6">
+					<label class="">Email:</label>
+					<div class="m-input-icon m-input-icon--right">
+						<input type="text" name="email" class="form-control m-input" placeholder="Enter email" />
+						<span class="m-input-icon__icon m-input-icon__icon--right"
+							><span><i class="la la-mail"></i></span
+						></span>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<label class="">Phone:</label>
+					<div class="m-input-icon m-input-icon--right">
+						<input type="text" name="phone" class="form-control m-input" placeholder="Enter phone" />
+						<span class="m-input-icon__icon m-input-icon__icon--right"
+							><span><i class="la la-mail"></i></span
+						></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="m-portlet__body">
+			<div class="form-group m-form__group row">
+				<div class="col-lg-6">
+					<label class="">Website:</label>
+					<div class="m-input-icon m-input-icon--right">
+						<input type="text" name="website" class="form-control m-input" placeholder="Enter email" />
+						<span class="m-input-icon__icon m-input-icon__icon--right"
+							><span><i class="la la-mail"></i></span
+						></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
+			<div class="m-form__actions m-form__actions--solid">
+				<div class="row">
+					<div class="col-lg-6"></div>
+					<div class="col-lg-6 m--align-right">
+						<button type="submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air">
+							Update
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+
+<div id="intern_files" class="m-portlet" hidden>
+	<div class="m-portlet__head">
+		<div class="m-portlet__head-caption">
+			<div class="m-portlet__head-title">
+				<span class="m-portlet__head-icon m--hide">
+					<i class="la la-gear"></i>
+				</span>
+				<h3 class="m-portlet__head-text">
+					Uploaded documents
+				</h3>
+			</div>
+		</div>
+	</div>
+
+	<!--begin::Form-->
+	<form id="upload_document_form" class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed">
+		<div class="m-portlet__body">
+			<div class="form-group m-form__group row">
+				<div class="col-lg-6">
+					<label>Upload new document:</label>
+					<div class="m-input-icon m-input-icon--right">
+						<input id="upload_document" type="file" accept="application/pdf, .png" name="upload_document" />
+						<input class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air" type="submit" value="Upload" />
+					</div>
+
+					<div class="row">
+						<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+							<label class="m-radio m-radio--solid m-radio--brand">
+								<input type="radio" name="type" value="CV"/> CV <span></span
+							></label>
+							<label class="m-radio m-radio--solid m-radio--brand">
+								<input type="radio" name="type" value="MOTIVATIONAL_LETTER" /> Motivational letter
+								<span></span>
+							</label>
+							<label class="m-radio m-radio--solid m-radio--brand">
+								<input type="radio" name="type" value="OTHER" /> Other
+								<span></span>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group m-form__group">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="nav nav-tabs" role="tablist" id="files_tablist">
+							<li class="nav-item">
+								<a
+									id="typeCV"
+									class="nav-link approved-tab active"
+									href=""
+									onclick="EditProfile.get_uploaded_files(EditProfile.user.id, 'CV');"
+									data-toggle="tab"
+									name="type"
+									>CV</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									id="typeMotivationalLetter"
+									class="nav-link approved-tab"
+									href=""
+									onclick="EditProfile.get_uploaded_files(EditProfile.user.id, 'MOTIVATIONAL_LETTER');"
+									data-toggle="tab"
+									name="type"
+									>Motivational letter</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									id="typeOther"
+									class="nav-link approved-tab"
+									href=""
+									onclick="EditProfile.get_uploaded_files(EditProfile.user.id, 'OTHER');"
+									data-toggle="tab"
+									name="type"
+									>Other</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<table
+							id="files_table"
+							class="table table-striped table-bordered table-hover table-checkable responsive no-wrap table-checkable"
+						>
+							<thead id="files_table_head">
+								<tr>
+									<th>ID</th>
+									<th>Name</th>
+									<th>Type</th>
+									<th>Download</th>
+									<th>Delete</th>
+								</tr>
+							</thead>
+							<tbody id="files_table_body"></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<div id="edit_small_modal" class="modal fade">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title"></h4>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="m-loader  m-loader--info m-loader--lg"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function() {
+		EditProfile.init();
+	});
+</script>

@@ -1,0 +1,8 @@
+/rest/.vscode
+/rest/.idea
+/rest/composer.lock
+/rest/request_logs/*
+/rest/tests/build
+/rest/vendor
+/rest/config/*
+bitbucket-pipelines.yml

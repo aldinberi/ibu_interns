@@ -1,0 +1,358 @@
+<form id="grade_form" class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed">
+	<div class="m-portlet__body">
+		<lable>Student:</lable>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Full name:</label>
+				<input name="student_name" type="text" class="form-control m-input" placeholder="Enter full name" />
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Department:</label>
+				<input name="student_department" type="text" class="form-control m-input"
+					placeholder="Enter department" />
+			</div>
+			<div class="col-lg-6">
+				<label style="color: black;">Student ID:</label>
+				<input name="student_id" type="text" class="form-control m-input" placeholder="Enter student id" />
+			</div>
+		</div>
+		<br />
+		<lable>Company:</lable>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Name:</label>
+				<input name="company_name" type="text" class="form-control m-input" placeholder="Enter company name" />
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Branch name:</label>
+				<input name="branch_name" type="text" class="form-control m-input" placeholder="Enter branch name" />
+			</div>
+			<div class="col-lg-6">
+				<label style="color: black;">Department:</label>
+				<input name="company_department" type="text" class="form-control m-input"
+					placeholder="Enter department" />
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Start Date:</label>
+				<div class="m-input-icon m-input-icon--right data-provide='datepicker'">
+					<input id="grade_start_date" name="start_date" type="text" class="form-control m-input"
+						placeholder="Select Start Date" />
+					<span class="m-input-icon__icon m-input-icon__icon--right"></span>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<label style="color: black;">End Date:</label>
+				<div class="m-input-icon m-input-icon--right data-provide='datepicker'">
+					<input id="grade_end_date" name="end_date" type="input" class="form-control m-input"
+						placeholder="Select End Date" />
+					<span class="m-input-icon__icon m-input-icon__icon--right"></span>
+				</div>
+			</div>
+		</div>
+		<br />
+		<p>
+			Please evaluate the performance of the student who has completed his/her industrial training in your company
+			or
+			organization according to the following criteria:
+		</p>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Attendence:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="attendence[]" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="attendence[]" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="attendence[]" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="attendence[]" value="4" /> 4
+						<span></span>
+					</label>
+					<label for="attendence[]" class="error" style="display:none;">Please choose one.</label>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<label style="color: black;">Obedience to company regulations:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="obedience" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="obedience" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="obedience" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="obedience" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Work knowledge and experience:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="work_knowledge" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="work_knowledge" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="work_knowledge" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="work_knowledge" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<label style="color: black;">Willingness to learn new concepts:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="willingness_to_learn" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="willingness_to_learn" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="willingness_to_learn" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="willingness_to_learn" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Ability to put new concepts into practice:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="new_concepts_into_practice" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="new_concepts_into_practice" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="new_concepts_into_practice" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="new_concepts_into_practice" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<label style="color: black;">Responsibility:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="responsibility" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="responsibility" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="responsibility" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="responsibility" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Capability of taking his/her own initiatives:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="own_initiative" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="own_initiative" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="own_initiative" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="own_initiative" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<label style="color: black;">Orderliness and cleanliness:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="orderliness" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="orderliness" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="orderliness" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="orderliness" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Outfit and apperance:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="outfit" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="outfit" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="outfit" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="outfit" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<label style="color: black;">Communication ability with customers:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="communication_customers" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="communication_customers" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="communication_customers" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="communication_customers" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Communication ability with colleagues:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="communication_colleagues" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="communication_colleagues" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="communication_colleagues" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="communication_colleagues" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<label style="color: black;">Competence in the field:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="competence" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="competence" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="competence" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="competence" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">Overall evaluation:</label>
+				<div class="m-radio-inline row form-group m-form__group m-login__form-sub">
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="overall" value="1" /> 1 <span></span></label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="overall" value="2" /> 2
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="overall" value="3" /> 3
+						<span></span>
+					</label>
+					<label class="m-radio m-radio--solid m-radio--brand">
+						<input type="radio" name="overall" value="4" /> 4
+						<span></span>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label style="color: black;">What is your opinion about student's future succes in his/her carrier?:
+				</label>
+				<textarea rows="5" cols="80" name="opinion" type="text" class="form-control m-input"
+					placeholder="Enter your answer here"></textarea>
+			</div>
+			<div class="col-lg-6">
+				<label style="color: black;">Would you accept this student for industrial training in your company
+					again?:
+				</label>
+				<textarea rows="5" cols="80" name="accept_again" type="text" class="form-control m-input"
+					placeholder="Enter your answer here"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
+			<div class="row">
+				<div class="m--align-left">
+					<button id="grade_modal_close" class="btn btn-outline-focus  m-btn m-btn--pill m-btn--custom"
+						data-dismiss="modal">
+						Cancel
+					</button>
+					<button type="button" id="grade_modal_button"
+						class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air btn-info">
+						Grade
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

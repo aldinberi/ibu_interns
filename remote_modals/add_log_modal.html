@@ -1,0 +1,42 @@
+<form id="add_logs_form" class="m-form m-form--fit m-form--label-align-right m-form--group-seperator-dashed">
+	<div class="m-portlet__body">
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label>Internship:</label>
+				<select class="form-control m-input" name="log_modal_dropdown" id="log_modal_dropdown"> </select>
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-6">
+				<label>Date:</label>
+				<div class="m-input-icon m-input-icon--right data-provide='datepicker'">
+					<input id="log_date" name="log_date" type="text" class="form-control m-input"
+						placeholder="Select Date" />
+					<span class="m-input-icon__icon m-input-icon__icon--right"><span></span></span>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<label>Duration:</label>
+				<div class="m-input-icon m-input-icon--right">
+					<input id="log_time" type="text" name="log_time"" class=" form-control m-input timepicker"
+						placeholder="Select Time" />
+					<span class="m-input-icon__icon m-input-icon__icon--right"><span></span></span>
+				</div>
+			</div>
+		</div>
+		<div class="form-group m-form__group row">
+			<div class="col-lg-12">
+				<label>Work Done:</label>
+				<textarea rows="8" cols="80" name="work_done" id="work_done" type="text" class="form-control m-input"
+					placeholder="Enter work done"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<div class="m-portlet__foot m-portlet__no-border m-portlet__foot--fit">
+			<div class="row">
+				<div class="m--align-left" id="logs_add_buttons"></div>
+			</div>
+		</div>
+	</div>
+</form>
